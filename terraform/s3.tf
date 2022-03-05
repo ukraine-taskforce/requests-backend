@@ -37,3 +37,20 @@ resource "aws_s3_object" "lambda_supplies" {
 
   etag = filemd5(data.archive_file.lambda_supplies_code.output_path)
 }
+
+//Supplies API
+data "archive_file" "lambda_requests_code" {
+  type = "zip"
+
+  source_dir  = "${path.module}/../lambda/requests"
+  output_path = "${path.module}/requests.zip"
+}
+
+resource "aws_s3_object" "lambda_requests" {
+  bucket = aws_s3_bucket.ugt_lambda_states.id
+
+  key    = "requests.zip"
+  source = data.archive_file.lambda_requests_code.output_path
+
+  etag = filemd5(data.archive_file.lambda_requests_code.output_path)
+}

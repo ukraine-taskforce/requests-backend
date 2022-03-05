@@ -29,13 +29,34 @@ resource "aws_lambda_function" "supplies" {
   runtime = "nodejs12.x"
   handler = "supplies.handler"
 
-  source_code_hash = data.archive_file.lambda_locations_code.output_base64sha256
+  source_code_hash = data.archive_file.lambda_supplies_code.output_base64sha256
 
   role = aws_iam_role.requests_lambda_role.arn
 }
 
 resource "aws_cloudwatch_log_group" "supplies" {
   name = "/aws/lambda/${aws_lambda_function.supplies.function_name}"
+
+  retention_in_days = 30
+}
+
+//Requests API
+resource "aws_lambda_function" "requests" {
+  function_name = "PostRequest"
+
+  s3_bucket = aws_s3_bucket.ugt_lambda_states.id
+  s3_key    = aws_s3_object.lambda_requests.key
+
+  runtime = "nodejs12.x"
+  handler = "requests.handler"
+
+  source_code_hash = data.archive_file.lambda_requests_code.output_base64sha256
+
+  role = aws_iam_role.requests_lambda_role.arn
+}
+
+resource "aws_cloudwatch_log_group" "requests" {
+  name = "/aws/lambda/${aws_lambda_function.requests.function_name}"
 
   retention_in_days = 30
 }

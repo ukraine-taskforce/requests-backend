@@ -83,3 +83,28 @@ resource "aws_apigatewayv2_route" "get_supplies" {
   route_key = "GET /api/v1/requests/supplies"
   target    = "integrations/${aws_apigatewayv2_integration.get_supplies.id}"
 }
+
+//Requests API
+resource "aws_lambda_permission" "requests" {
+  statement_id  = "AllowExecutionFromAPIGateway"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.requests.function_name
+  principal     = "apigateway.amazonaws.com"
+
+  source_arn = "${aws_apigatewayv2_api.ugt_gw.execution_arn}/*/*"
+}
+
+resource "aws_apigatewayv2_integration" "post_request" {
+  api_id = aws_apigatewayv2_api.ugt_gw.id
+
+  integration_uri    = aws_lambda_function.requests.invoke_arn
+  integration_type   = "AWS_PROXY"
+  integration_method = "POST"
+}
+
+resource "aws_apigatewayv2_route" "post_request" {
+  api_id = aws_apigatewayv2_api.ugt_gw.id
+
+  route_key = "POST /api/v1/requests"
+  target    = "integrations/${aws_apigatewayv2_integration.post_request.id}"
+}
