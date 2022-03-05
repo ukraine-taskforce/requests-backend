@@ -11,11 +11,11 @@ module.exports.handler = async (event) => {
       supplies: [
         {
           id: 1,
-          uk: "Одяг"
+          name: "Одяг"
         },
         {
           id: 2,
-          uk: "Їжа"
+          name: "Їжа"
         }
       ]
     }),

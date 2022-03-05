@@ -11,11 +11,11 @@ module.exports.handler = async (event) => {
       locations: [
         {
           id: 1,
-          uk: "Харків"
+          name: "Харків"
         },
         {
           id: 2,
-          uk: "Cуми"
+          name: "Cуми"
         }
       ]
     }),
