@@ -7,7 +7,7 @@ module.exports.handler = async (event) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      locations: [
+      supplies: [
         {
           id: 1,
           uk: "Одяг"
