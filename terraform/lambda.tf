@@ -52,7 +52,15 @@ resource "aws_lambda_function" "requests" {
 
   source_code_hash = data.archive_file.lambda_requests_code.output_base64sha256
 
-  role = aws_iam_role.requests_lambda_role.arn
+  role = aws_iam_role.post_request_lambda_role.arn
+
+  timeout = 30
+
+  environment {
+    variables = {
+      sqs_url = aws_sqs_queue.requests-queue.url
+    }
+  }
 }
 
 resource "aws_cloudwatch_log_group" "requests" {
