@@ -72,3 +72,64 @@ resource "aws_iam_role_policy_attachment" "requests_lambda_policy_attachment" {
   role = aws_iam_role.post_request_lambda_role.id
   policy_arn = aws_iam_policy.post_request_lambda_policy.arn
 }
+
+resource "aws_iam_policy" "read_request_lambda_policy" {
+  name        = "read_request_lambda_policy"
+  description = "read_request_lambda_policy"
+
+  policy = <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "sqs:ReceiveMessage",
+        "sqs:DeleteMessage",
+        "sqs:GetQueueAttributes"
+      ],
+      "Effect": "Allow",
+      "Resource": "${aws_sqs_queue.requests-queue.arn}"
+    },
+    {
+      "Action": [
+        "dynamodb:PutItem"
+      ],
+      "Effect": "Allow",
+      "Resource": "${aws_dynamodb_table.requests.arn}"
+    },
+    {
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
+EOF
+}
+
+resource "aws_iam_role" "read_request_lambda_role" {
+  name = "read_request_lambda_role"
+  assume_role_policy = <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": "sts:AssumeRole",
+      "Principal": {
+        "Service": "lambda.amazonaws.com"
+      },
+      "Effect": "Allow"
+    }
+  ]
+}
+EOF
+}
+
+resource "aws_iam_role_policy_attachment" "read_request_lambda_policy_attachment" {
+  role = aws_iam_role.read_request_lambda_role.id
+  policy_arn = aws_iam_policy.read_request_lambda_policy.arn
+}

@@ -68,3 +68,41 @@ resource "aws_cloudwatch_log_group" "requests" {
 
   retention_in_days = 30
 }
+
+//SQS listener
+resource "aws_lambda_function" "processor" {
+  function_name = "SaveRequest"
+
+  s3_bucket = aws_s3_bucket.ugt_lambda_states.id
+  s3_key    = aws_s3_object.lambda_processor.key
+
+  runtime = "nodejs12.x"
+  handler = "processor.handler"
+
+  source_code_hash = data.archive_file.lambda_processor_code.output_base64sha256
+
+  role = aws_iam_role.read_request_lambda_role.arn
+
+  timeout = 30
+
+  environment {
+    variables = {
+      sqs_url = aws_sqs_queue.requests-queue.url
+      table_name = aws_dynamodb_table.requests.name
+    }
+  }
+}
+
+resource "aws_cloudwatch_log_group" "listener" {
+  name = "/aws/lambda/${aws_lambda_function.processor.function_name}"
+
+  retention_in_days = 30
+}
+
+# Event source from SQS
+resource "aws_lambda_event_source_mapping" "event_source_mapping" {
+  event_source_arn = aws_sqs_queue.requests-queue.arn
+  enabled          = true
+  function_name    = aws_lambda_function.processor.arn
+  batch_size       = 1
+}

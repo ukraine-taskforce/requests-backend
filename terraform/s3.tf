@@ -38,7 +38,7 @@ resource "aws_s3_object" "lambda_supplies" {
   etag = filemd5(data.archive_file.lambda_supplies_code.output_path)
 }
 
-//Supplies API
+//Requests API
 data "archive_file" "lambda_requests_code" {
   type = "zip"
 
@@ -53,4 +53,21 @@ resource "aws_s3_object" "lambda_requests" {
   source = data.archive_file.lambda_requests_code.output_path
 
   etag = filemd5(data.archive_file.lambda_requests_code.output_path)
+}
+
+//SQS listener
+data "archive_file" "lambda_processor_code" {
+  type = "zip"
+
+  source_dir  = "${path.module}/../lambda/processor"
+  output_path = "${path.module}/processor.zip"
+}
+
+resource "aws_s3_object" "lambda_processor" {
+  bucket = aws_s3_bucket.ugt_lambda_states.id
+
+  key    = "processor.zip"
+  source = data.archive_file.lambda_processor_code.output_path
+
+  etag = filemd5(data.archive_file.lambda_processor_code.output_path)
 }
