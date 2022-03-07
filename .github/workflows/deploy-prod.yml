@@ -1,0 +1,71 @@
+name: Deploy AWS Lambdas
+
+on:
+  push:
+    tags:
+      - v*
+
+env:
+  LAMBDA_DIR: lambda
+  S3_BUCKET: ${{ secrets.PROD_S3_BUCKET }}
+
+jobs:
+  locations:
+    name: Deploy Locations Lambda
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ukraine-taskforce/requests-backend@gha-deploy-lambdas
+        with:
+          lambda-dir: ${LAMBDA_DIR}/locations
+          lambda-name: GetLocations
+          s3-bucket: ${S3_BUCKET}
+          s3-key: locations.zip
+          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key-id: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-1
+
+  processor:
+    name: Deploy Processor Lambda
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ukraine-taskforce/requests-backend@gha-deploy-lambdas
+        with:
+          lambda-dir: lambda/processor
+          lambda-name: SaveRequest
+          s3-bucket: ${S3_BUCKET}
+          s3-key: processor.zip
+          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key-id: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-1
+
+  requests:
+    name: Deploy Requests Lambda
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ukraine-taskforce/requests-backend@gha-deploy-lambdas
+        with:
+          lambda-dir: lambda/requests
+          lambda-name: PostRequest
+          s3-bucket: ${S3_BUCKET}
+          s3-key: requests.zip
+          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key-id: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-1
+
+  supplies:
+    name: Deploy Supplies Lambda
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ukraine-taskforce/requests-backend@gha-deploy-lambdas
+        with:
+          lambda-dir: lambda/supplies
+          lambda-name: GetSupplies
+          s3-bucket: ${S3_BUCKET}
+          s3-key: supplies.zip
+          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key-id: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-1
