@@ -11,8 +11,4 @@ resource "aws_dynamodb_table" "requests" {
     type = "S"
   }
 
-  ttl {
-    attribute_name = "TimeToExist"
-    enabled        = false
-  }
 }
