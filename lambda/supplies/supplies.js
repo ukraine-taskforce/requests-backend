@@ -80,7 +80,7 @@ module.exports.handler = async (event) => {
         },
         {
             id: "tampons",
-            name: "тампони",
+            uk: "тампони",
             en: "Tampons"
         },
         {
