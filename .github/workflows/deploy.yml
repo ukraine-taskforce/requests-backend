@@ -23,7 +23,6 @@ jobs:
           s3-key: locations.zip
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-1
 
   processor:
     name: Deploy Processor Lambda
@@ -38,7 +37,6 @@ jobs:
           s3-key: processor.zip
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-1
 
   requests:
     name: Deploy Requests Lambda
@@ -53,7 +51,6 @@ jobs:
           s3-key: requests.zip
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-1
 
   supplies:
     name: Deploy Supplies Lambda
@@ -68,4 +65,3 @@ jobs:
           s3-key: supplies.zip
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-1
