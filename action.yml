@@ -45,5 +45,10 @@ runs:
     - name: update Lambda
       run: |
         aws lambda update-function-code --function-name ${{ inputs.lambda-name }} \
-          --s3-bucket ${{ inputs.s3-bucket }} --s3-key ${{ inputs.s3-key }}
+          --s3-bucket ${{ inputs.s3-bucket }} --s3-key ${{ inputs.s3-key }} \
+          > /dev/null 2>&1
+      shell: bash
+    - name: wait for Lambda update
+      run: |
+        aws lambda wait function-updated --function-name ${{ inputs.lambda-name }}
       shell: bash
