@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@gha-deploy-lambdas
+      - uses: ukraine-taskforce/requests-backend@main
         with:
           lambda-dir: ${LAMBDA_DIR}/locations
           lambda-name: GetLocations
@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@gha-deploy-lambdas
+      - uses: ukraine-taskforce/requests-backend@main
         with:
           lambda-dir: lambda/processor
           lambda-name: SaveRequest
@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@gha-deploy-lambdas
+      - uses: ukraine-taskforce/requests-backend@main
         with:
           lambda-dir: lambda/requests
           lambda-name: PostRequest
@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@gha-deploy-lambdas
+      - uses: ukraine-taskforce/requests-backend@main
         with:
           lambda-dir: lambda/supplies
           lambda-name: GetSupplies
