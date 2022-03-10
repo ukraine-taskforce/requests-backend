@@ -22,7 +22,7 @@ jobs:
           s3-bucket: ${S3_BUCKET}
           s3-key: locations.zip
           aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key-id: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
 
   processor:
     name: Deploy Processor Lambda
@@ -36,7 +36,7 @@ jobs:
           s3-bucket: ${S3_BUCKET}
           s3-key: processor.zip
           aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key-id: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
 
   requests:
     name: Deploy Requests Lambda
@@ -50,7 +50,7 @@ jobs:
           s3-bucket: ${S3_BUCKET}
           s3-key: requests.zip
           aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key-id: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
 
   supplies:
     name: Deploy Supplies Lambda
@@ -64,4 +64,4 @@ jobs:
           s3-bucket: ${S3_BUCKET}
           s3-key: supplies.zip
           aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key-id: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
