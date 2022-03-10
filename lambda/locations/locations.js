@@ -12,7 +12,7 @@ module.exports.handler = async (event) => {
   if (locale == 'uk')
     result = cityData.map(function(c) {
         var o = {};
-        o["id"] = c.en;
+        o["id"] = c.id;
         o["name"] = c.uk;
 
         return o;
@@ -20,7 +20,7 @@ module.exports.handler = async (event) => {
   else
     result = cityData.map(function(c) {
         var o = {};
-        o["id"] = c.en;
+        o["id"] = c.id;
         o["name"] = c.en;
 
         return o;
