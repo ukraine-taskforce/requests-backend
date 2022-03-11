@@ -1,6 +1,9 @@
-name: Deploy AWS Lambdas
+name: Deploy AWS Lambdas (matrix)
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -10,58 +13,38 @@ env:
   S3_BUCKET: ${{ secrets.S3_BUCKET }}
 
 jobs:
-  locations:
-    name: Deploy Locations Lambda
+  deploy:
+    strategy:
+      matrix:
+        lambda: [locations, processor, requests, supplies]
+    name: Deploy Lambda
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@main
-        with:
-          lambda-dir: ${LAMBDA_DIR}/locations
-          lambda-name: GetLocations
-          s3-bucket: ${S3_BUCKET}
-          s3-key: locations.zip
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: set lambda name
+        run: |
+          if [ "${{ matrix.lambda }}" == locations ]; then
+              echo "LAMBDA_NAME=GetLocations" >> $GITHUB_ENV
+          elif [ "${{ matrix.lambda }}" == processor ]; then
+              echo "LAMBDA_NAME=SaveRequest" >> $GITHUB_ENV
+          elif [ "${{ matrix.lambda }}" == requests ]; then
+              echo "LAMBDA_NAME=PostRequest" >> $GITHUB_ENV
+          elif [ "${{ matrix.lambda }}" == supplies ]; then
+              echo "LAMBDA_NAME=GetSupplies" >> $GITHUB_ENV
+          else
+            exit 1
+          fi
+      - run: |
+          echo "lambda-dir: ${LAMBDA_DIR}/${{ matrix.lambda }}"
+          echo "lambda-name: ${LAMBDA_NAME}"
+          echo "s3-bucket: ${S3_BUCKET}"
+          echo "s3-key: ${{ matrix.lambda }}.zip"
 
-  processor:
-    name: Deploy Processor Lambda
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@main
-        with:
-          lambda-dir: lambda/processor
-          lambda-name: SaveRequest
-          s3-bucket: ${S3_BUCKET}
-          s3-key: processor.zip
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-  requests:
-    name: Deploy Requests Lambda
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@main
-        with:
-          lambda-dir: lambda/requests
-          lambda-name: PostRequest
-          s3-bucket: ${S3_BUCKET}
-          s3-key: requests.zip
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-  supplies:
-    name: Deploy Supplies Lambda
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@main
-        with:
-          lambda-dir: lambda/supplies
-          lambda-name: GetSupplies
-          s3-bucket: ${S3_BUCKET}
-          s3-key: supplies.zip
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#      - uses: ukraine-taskforce/requests-backend@main
+#        with:
+#          lambda-dir: ${LAMBDA_DIR}/${{ matrix.lambda }}
+#          lambda-name: ${LAMBDA_NAME}
+#          s3-bucket: ${S3_BUCKET}
+#          s3-key: ${{ matrix.lambda }}.zip
+#          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
