@@ -1,9 +1,12 @@
-name: Deploy AWS Lambdas (dev)
+name: Deploy AWS Lambdas (dev, manual)
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: branch to deploy from to dev
+        required: true
+        default: main
 
 env:
   LAMBDA_DIR: lambda
@@ -15,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+        with:
+          ref: ${{ github.event.inputs.branch }}
       - uses: ukraine-taskforce/requests-backend@main
         with:
           lambda-dir: ${LAMBDA_DIR}/locations
@@ -29,6 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+        with:
+          ref: ${{ github.event.inputs.branch }}
       - uses: ukraine-taskforce/requests-backend@main
         with:
           lambda-dir: lambda/processor
@@ -43,6 +50,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+        with:
+          ref: ${{ github.event.inputs.branch }}
       - uses: ukraine-taskforce/requests-backend@main
         with:
           lambda-dir: lambda/requests
@@ -57,6 +66,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+        with:
+          ref: ${{ github.event.inputs.branch }}
       - uses: ukraine-taskforce/requests-backend@main
         with:
           lambda-dir: lambda/supplies
