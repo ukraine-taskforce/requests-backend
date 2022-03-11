@@ -3,10 +3,13 @@ module.exports.handler = async (event) => {
   let cityData = require('./cities.json');
 
   let locale;
+  let include_metadata;
   if (event.queryStringParameters)
     locale = event.queryStringParameters.locale;
+    include_metadata = event.queryStringParameters.include_metadata;
 
   if (!locale) locale = 'uk';
+  if (!include_metadata) include_metadata = false;
 
   let result;
   if (locale == 'uk')
@@ -14,7 +17,10 @@ module.exports.handler = async (event) => {
         var o = {};
         o["id"] = c.id;
         o["name"] = c.uk;
-
+	if (include_metadata) {
+	    o["lat"] = c.lat;
+	    o["lon"] = c.lon;
+	}
         return o;
     });
   else
@@ -22,7 +28,10 @@ module.exports.handler = async (event) => {
         var o = {};
         o["id"] = c.id;
         o["name"] = c.en;
-
+	if (include_metadata) {
+	    o["lat"] = c.lat;
+	    o["lon"] = c.lon;
+	}
         return o;
     });
 
