@@ -1,4 +1,4 @@
-name: Deploy AWS Lambdas
+name: Deploy AWS Lambdas (dev)
 
 on:
   push:
