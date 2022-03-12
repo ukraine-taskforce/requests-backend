@@ -65,3 +65,17 @@ jobs:
           s3-key: supplies.zip
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+  requests-aggregated:
+    name: Deploy Requests Aggregated Lambda
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ukraine-taskforce/requests-backend@main
+        with:
+          lambda-dir: lambda/requests-aggregated
+          lambda-name: GetRequestsAggregated
+          s3-bucket: ${S3_BUCKET}
+          s3-key: requests-aggregated.zip
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
