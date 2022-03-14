@@ -10,72 +10,30 @@ env:
   S3_BUCKET: ${{ secrets.PROD_S3_BUCKET }}
 
 jobs:
-  locations:
-    name: Deploy Locations Lambda
+  deploy:
+    strategy:
+      fail-fast: false
+      matrix:
+        lambda: [locations, processor, requests, supplies, requests-aggregated]
+    name: Deploy Lambda
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: set lambda name
+        run: |
+          if [ "${{ matrix.lambda }}" == locations ]; then LAMBDA_NAME=GetLocations
+          elif [ "${{ matrix.lambda }}" == processor ]; then LAMBDA_NAME=SaveRequest
+          elif [ "${{ matrix.lambda }}" == requests ]; then LAMBDA_NAME=PostRequest
+          elif [ "${{ matrix.lambda }}" == supplies ]; then LAMBDA_NAME=GetSupplies
+          elif [ "${{ matrix.lambda }}" == requests-aggregated ]; then LAMBDA_NAME=GetRequestsAggregated
+          else exit 1
+          fi
+          echo "LAMBDA_NAME=${LAMBDA_NAME}" >> $GITHUB_ENV
       - uses: ukraine-taskforce/requests-backend@main
         with:
-          lambda-dir: ${LAMBDA_DIR}/locations
-          lambda-name: GetLocations
-          s3-bucket: ${S3_BUCKET}
-          s3-key: locations.zip
-          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
-
-  processor:
-    name: Deploy Processor Lambda
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@main
-        with:
-          lambda-dir: lambda/processor
-          lambda-name: SaveRequest
-          s3-bucket: ${S3_BUCKET}
-          s3-key: processor.zip
-          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
-
-  requests:
-    name: Deploy Requests Lambda
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@main
-        with:
-          lambda-dir: lambda/requests
-          lambda-name: PostRequest
-          s3-bucket: ${S3_BUCKET}
-          s3-key: requests.zip
-          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
-
-  supplies:
-    name: Deploy Supplies Lambda
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@main
-        with:
-          lambda-dir: lambda/supplies
-          lambda-name: GetSupplies
-          s3-bucket: ${S3_BUCKET}
-          s3-key: supplies.zip
-          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
-
-  requests-aggregated:
-    name: Deploy Requests Aggregated Lambda
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ukraine-taskforce/requests-backend@main
-        with:
-          lambda-dir: lambda/requests-aggregated
-          lambda-name: GetRequestsAggregated
-          s3-bucket: ${S3_BUCKET}
-          s3-key: requests-aggregated.zip
+          lambda-dir: ${{ env.LAMBDA_DIR }}/${{ matrix.lambda }}
+          lambda-name: ${{ env.LAMBDA_NAME }}
+          s3-bucket: ${{ env.S3_BUCKET }}
+          s3-key: ${{ matrix.lambda }}.zip
           aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
