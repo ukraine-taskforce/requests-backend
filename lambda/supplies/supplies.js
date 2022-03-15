@@ -9,7 +9,6 @@ module.exports.handler = async (event) => {
 
   if (!locale) locale = 'uk';
 
-
   let result;
   if (locale == 'uk')
     result = supplyData.map(function(s) {
