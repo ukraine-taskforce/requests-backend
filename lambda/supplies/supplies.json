@@ -1,0 +1,97 @@
+[
+  {
+    "id": "food",
+    "uk": "Продукти харчування",
+    "en": "Food"
+  },
+  {
+    "id": "water",
+    "uk": "Вода",
+    "en": "Water"
+  },
+  {
+    "id": "baby_food",
+    "uk": "Дитяче харчування",
+    "en": "Baby Food"
+  },
+  {
+    "id": "baby_products",
+    "uk": "Дитячі товари",
+    "en": "Baby Products"
+  },
+  {
+    "id": "medical_kits_supplies",
+    "uk": "Медичні товари",
+    "en": "Medical Kits / Supplies"
+  },
+  {
+    "id": "personal_hygiene_kits",
+    "uk": "Товари особистої гігієни",
+    "en": "Personal hygiene kits"
+  },
+  {
+    "id": "masks",
+    "uk": "Маски",
+    "en": "Masks"
+  },
+  {
+    "id": "sanitary_pads",
+    "uk": "Гігієнічні прокладки",
+    "en": "Sanitary pads"
+  },
+  {
+    "id": "tampons",
+    "uk": "Тампони",
+    "en": "Tampons"
+  },
+  {
+    "id": "torches",
+    "uk": "Смолоскипи",
+    "en": "Torches"
+  },
+  {
+    "id": "batteries",
+    "uk": "Батарейки",
+    "en": "Batteries"
+  },
+  {
+    "id": "candles",
+    "uk": "Свічки",
+    "en": "Candles"
+  },
+  {
+    "id": "firestarter",
+    "uk": "Запальнички",
+    "en": "Firestarter"
+  },
+  {
+    "id": "bedding",
+    "uk": "Постільна білизна",
+    "en": "Bedding"
+  },
+  {
+    "id": "sleeping_bags",
+    "uk": "Спальні мішки",
+    "en": "Sleeping Bags"
+  },
+  {
+    "id": "thermal_clothing",
+    "uk": "Термоодяг",
+    "en": "Thermal clothing"
+  },
+  {
+    "id": "shoes",
+    "uk": "Взуття",
+    "en": "Shoes"
+  },
+  {
+    "id": "clothes",
+    "uk": "Одяг",
+    "en": "Clothes"
+  },
+  {
+    "id": "gloves",
+    "uk": "Рукавички",
+    "en": "Gloves"
+  }
+]
