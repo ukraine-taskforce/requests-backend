@@ -1,6 +1,7 @@
+let supplyData = require('./supplies.json');
+
 module.exports.handler = async (event) => {
   console.log('Request: ', event);
-  let supplyData = require('./supplies.json');
 
   let locale;
   if (event.queryStringParameters)

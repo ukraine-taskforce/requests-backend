@@ -1,6 +1,7 @@
+let cityData = require('./cities.json');
+
 module.exports.handler = async (event) => {
   console.log('Request: ', event);
-  let cityData = require('./cities.json');
 
   let locale;
   let include_metadata;
