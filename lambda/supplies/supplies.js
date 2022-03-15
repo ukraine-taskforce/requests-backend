@@ -1,4 +1,4 @@
-let supplyData = require('./supplies.json');
+const supplyData = require('./supplies.json');
 
 module.exports.handler = async (event) => {
   console.log('Request: ', event);

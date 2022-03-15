@@ -1,4 +1,4 @@
-let cityData = require('./cities.json');
+const cityData = require('./cities.json');
 
 module.exports.handler = async (event) => {
   console.log('Request: ', event);
