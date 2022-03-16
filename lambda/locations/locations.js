@@ -20,6 +20,7 @@ module.exports.handler = async (event) => {
 	if (include_metadata) {
 	    o["lat"] = c.lat;
 	    o["lon"] = c.lon;
+	    o["region_id"] = c.region_id;
 	}
         return o;
     });
@@ -31,6 +32,7 @@ module.exports.handler = async (event) => {
 	if (include_metadata) {
 	    o["lat"] = c.lat;
 	    o["lon"] = c.lon;
+	    o["region_id"] = c.region_id;
 	}
         return o;
     });
