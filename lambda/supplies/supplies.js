@@ -1,40 +1,39 @@
-const supplyData = require('./supplies.json');
+const supplyData = require("./supplies.json");
 
 module.exports.handler = async (event) => {
-  console.log('Request: ', event);
+  console.log("Request: ", event);
 
   let locale;
-  if (event.queryStringParameters)
-    locale = event.queryStringParameters.locale;
+  if (event.queryStringParameters) locale = event.queryStringParameters.locale;
 
-  if (!locale) locale = 'uk';
+  if (!locale) locale = "uk";
 
   let result;
-  if (locale == 'uk')
-    result = supplyData.map(function(s) {
-        var o = {};
-        o["id"] = s.id;
-        o["name"] = s.uk;
+  if (locale == "uk")
+    result = supplyData.map(function (s) {
+      var o = {};
+      o["id"] = s.id;
+      o["name"] = s.uk;
 
-        return o;
+      return o;
     });
   else
-    result = supplyData.map(function(s) {
-        var o = {};
-        o["id"] = s.id;
-        o["name"] = s.en;
+    result = supplyData.map(function (s) {
+      var o = {};
+      o["id"] = s.id;
+      o["name"] = s.en;
 
-        return o;
+      return o;
     });
 
   return {
     statusCode: 200,
     headers: {
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*'
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
     body: JSON.stringify({
-      supplies: result
+      supplies: result,
     }),
-  }
-}
+  };
+};
