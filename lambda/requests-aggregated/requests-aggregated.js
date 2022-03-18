@@ -9,6 +9,9 @@ const verifier = CognitoJwtVerifier.create({
 });
 
 module.exports.handler = async (event) => {
+  console.log("Request: ", event);
+  console.log("Env: ", env);
+
   try {
     await verifier.verify(event.headers["Authorization"]);
   } catch (error) {
