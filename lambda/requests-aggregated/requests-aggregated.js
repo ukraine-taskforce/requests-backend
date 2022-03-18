@@ -1,5 +1,5 @@
 const AWS = require("aws-sdk");
-const { CognitoJwtVerifier } = require("aws-jwt-verify");
+// const { CognitoJwtVerifier } = require("aws-jwt-verify");
 
 module.exports.handler = async (event) => {
   console.log("Request: ", event);
