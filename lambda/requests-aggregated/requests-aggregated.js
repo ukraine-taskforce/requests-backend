@@ -3,7 +3,7 @@ const AWS = require("aws-sdk");
 
 module.exports.handler = async (event) => {
   console.log("Request: ", event);
-  console.log("Env: ", env);
+  console.log("Env: ", process.env);
   console.log("Auth: ", event.headers["authorization"]);
 
   // Verifier that expects valid access tokens:
