@@ -13,7 +13,7 @@ module.exports.handler = async (event) => {
   console.log("Env: ", env);
 
   try {
-    await verifier.verify(event.headers["Authorization"]);
+    await verifier.verify(event.headers["authorization"]);
   } catch (error) {
     return {
       statusCode: 401,
