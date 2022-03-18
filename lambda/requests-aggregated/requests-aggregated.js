@@ -1,26 +1,24 @@
 const AWS = require("aws-sdk");
-// const { CognitoJwtVerifier } = require("aws-jwt-verify");
+const { CognitoJwtVerifier } = require("aws-jwt-verify");
+
+// Verifier that expects valid access tokens:
+const verifier = CognitoJwtVerifier.create({
+  userPoolId: process.env.poolId,
+  tokenUse: "access",
+  clientId: process.env.clientId,
+});
 
 module.exports.handler = async (event) => {
   console.log("Request: ", event);
-  console.log("Env: ", process.env);
-  console.log("Auth: ", event.headers["authorization"]);
 
-  // Verifier that expects valid access tokens:
-  // const verifier = CognitoJwtVerifier.create({
-  //   userPoolId: process.env.poolId,
-  //   tokenUse: "access",
-  //   clientId: process.env.clientId,
-  // });
-
-  // try {
-  //   await verifier.verify(event.headers["authorization"]);
-  // } catch (error) {
-  //   return {
-  //     statusCode: 401,
-  //     body: "Not Authorized",
-  //   };
-  // }
+  try {
+    await verifier.verify(event.headers["authorization"]);
+  } catch (error) {
+    return {
+      statusCode: 401,
+      body: "Not Authorized",
+    };
+  }
 
   const s3 = new AWS.S3({ apiVersion: "2006-03-01" });
   const bucket = process.env.bucket;
