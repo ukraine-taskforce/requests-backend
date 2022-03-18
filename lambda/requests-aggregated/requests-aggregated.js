@@ -1,17 +1,17 @@
 const { CognitoJwtVerifier } = require("aws-jwt-verify");
 const AWS = require("aws-sdk");
 
-// Verifier that expects valid access tokens:
-const verifier = CognitoJwtVerifier.create({
-  userPoolId: process.env.poolId,
-  tokenUse: "access",
-  clientId: process.env.clientId,
-});
-
 module.exports.handler = async (event) => {
   console.log("Request: ", event);
   console.log("Env: ", env);
   console.log("Auth: ", event.headers["authorization"]);
+
+  // Verifier that expects valid access tokens:
+  const verifier = CognitoJwtVerifier.create({
+    userPoolId: process.env.poolId,
+    tokenUse: "access",
+    clientId: process.env.clientId,
+  });
 
   // try {
   //   await verifier.verify(event.headers["authorization"]);
