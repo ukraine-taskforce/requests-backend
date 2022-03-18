@@ -11,15 +11,16 @@ const verifier = CognitoJwtVerifier.create({
 module.exports.handler = async (event) => {
   console.log("Request: ", event);
   console.log("Env: ", env);
+  console.log("Auth: ", event.headers["authorization"]);
 
-  try {
-    await verifier.verify(event.headers["authorization"]);
-  } catch (error) {
-    return {
-      statusCode: 401,
-      body: "Not Authorized",
-    };
-  }
+  // try {
+  //   await verifier.verify(event.headers["authorization"]);
+  // } catch (error) {
+  //   return {
+  //     statusCode: 401,
+  //     body: "Not Authorized",
+  //   };
+  // }
 
   const s3 = new AWS.S3({ apiVersion: "2006-03-01" });
   const bucket = process.env.bucket;
