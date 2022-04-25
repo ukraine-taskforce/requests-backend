@@ -2,13 +2,20 @@ var AWS = require('aws-sdk'),
     uuid = AWS.util.uuid,
     dynamoDbDocumentClient = new AWS.DynamoDB.DocumentClient();
 
-module.exports.handler = async (event) => {
-    let body = JSON.parse(event.Records[0].body);
+async function storeToDynamoDB(params) {
+    try {
+        await dynamoDbDocumentClient.put(params).promise();
+        return {message: 'Successfully created item!'};
+    } catch (err) {
+        console.log('Error: ', err);
+        return {message: err};
+    }
+}
 
+async function processV1Request(body) {
     let peopleCount = getPersonaCount(body, "adults") + getPersonaCount(body, "infants") + getPersonaCount(body, "children");
 
-    console.log('Request: ', event);
-    var params = {
+    const params = {
         Item: {
             'id': uuid.v4(),
             'peopleCount': peopleCount,
@@ -17,14 +24,7 @@ module.exports.handler = async (event) => {
         },
         TableName: process.env.table_name
     };
-
-    try {
-        await dynamoDbDocumentClient.put(params).promise();
-        return { message: 'Successfully created item!' };
-    } catch (err) {
-        console.log('Error: ', err);
-        return { message: err };
-    }
+    return await storeToDynamoDB(params);
 
     function getPersonaCount(body, persona) {
         try {
@@ -32,5 +32,29 @@ module.exports.handler = async (event) => {
         } catch (err) {
             return 0;
         }
+    }
+}
+
+async function processV2Request(body) {
+    const params = {
+        Item: {
+            'id': uuid.v4(),
+            'timestamp': Date.now(),
+            'body': body
+        },
+        TableName: process.env.v2_table_name
+    };
+    return await storeToDynamoDB(params);
+}
+
+module.exports.handler = async (event) => {
+    console.log('Request: ', event);
+
+    let body = JSON.parse(event.Records[0].body);
+
+    if (body.version === "v2") {
+        return await processV2Request(body);
+    } else {
+        return await processV1Request(body);
     }
 }
