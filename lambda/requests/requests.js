@@ -1,5 +1,16 @@
 const AWS = require("aws-sdk");
 
+function response(statusCode) {
+    return {
+        statusCode: statusCode,
+        headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({}),
+    };
+}
+
 module.exports.handler = async (event) => {
     console.log("Request: ", event);
     const sqs = new AWS.SQS({apiVersion: "2012-11-05"});
@@ -27,14 +38,7 @@ module.exports.handler = async (event) => {
             people: body.people,
         };
     } else {
-        return {
-            statusCode: 404,
-            headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-            },
-            body: JSON.stringify({}),
-        };
+        return response(404);
     }
 
     console.log("Send: ", request);
@@ -46,12 +50,5 @@ module.exports.handler = async (event) => {
 
     await sqs.sendMessage(payload).promise();
 
-    return {
-        statusCode: 201,
-        headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-        },
-        body: JSON.stringify({}),
-    };
+    return response(201);
 };
