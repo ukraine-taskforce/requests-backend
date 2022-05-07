@@ -39,16 +39,16 @@
   },
   "subcategories": [
     {
-      "id":"Baby: Baby food > salty",
+      "id":"Baby: baby food > salty",
       "parent": "Baby",
-      "en":"baby food > salty",
-      "uk":"baby food > salty"
+      "en":"Baby food > salty",
+      "uk":"Baby food > salty"
     },
     {
-      "id":"Baby: Baby food > sweet",
+      "id":"Baby: baby food > sweet",
       "parent": "Baby",
-      "en":"baby food > sweet",
-      "uk":"baby food > sweet"
+      "en":"Baby food > sweet",
+      "uk":"Baby food > sweet"
     },
     {
       "id":"Baby: Baby oil",
@@ -873,3 +873,4 @@
       "uk":"Waffles"
     }
   ]
+}
