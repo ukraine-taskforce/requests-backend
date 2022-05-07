@@ -39,838 +39,837 @@
   },
   "subcategories": [
     {
-      "id":"Baby food > salty",
+      "id":"Baby: Baby food > salty",
       "parent": "Baby",
-      "en":"Baby food > salty",
-      "uk":"Baby food > salty"
+      "en":"baby food > salty",
+      "uk":"baby food > salty"
     },
     {
-      "id":"Baby food > sweet",
+      "id":"Baby: Baby food > sweet",
       "parent": "Baby",
-      "en":"Baby food > sweet",
-      "uk":"Baby food > sweet"
+      "en":"baby food > sweet",
+      "uk":"baby food > sweet"
     },
     {
-      "id":"Baby oil",
+      "id":"Baby: Baby oil",
       "parent": "Baby",
       "en":"Baby oil",
       "uk":"Baby oil"
     },
     {
-      "id":"Bottle",
+      "id":"Baby: Bottle",
       "parent": "Baby",
       "en":"Bottle",
       "uk":"Bottle"
     },
     {
-      "id":"Cleaning Wipes",
+      "id":"Baby: Cleaning Wipes",
       "parent": "Baby",
       "en":"Cleaning Wipes",
       "uk":"Cleaning Wipes"
     },
     {
-      "id":"Cookies",
+      "id":"Baby: Cookies",
       "parent": "Baby",
       "en":"Cookies",
       "uk":"Cookies"
     },
     {
-      "id":"Cream",
+      "id":"Baby: Cream",
       "parent": "Baby",
       "en":"Cream",
       "uk":"Cream"
     },
     {
-      "id":"Diapers > size 1",
+      "id":"Baby: Diapers > size 1",
       "parent": "Baby",
       "en":"Diapers > size 1",
       "uk":"Diapers > size 1"
     },
     {
-      "id":"Diapers > size 2",
+      "id":"Baby: Diapers > size 2",
       "parent": "Baby",
       "en":"Diapers > size 2",
       "uk":"Diapers > size 2"
     },
     {
-      "id":"Diapers > size 3",
+      "id":"Baby: Diapers > size 3",
       "parent": "Baby",
       "en":"Diapers > size 3",
       "uk":"Diapers > size 3"
     },
     {
-      "id":"Diapers > size 4",
+      "id":"Baby: Diapers > size 4",
       "parent": "Baby",
       "en":"Diapers > size 4",
       "uk":"Diapers > size 4"
     },
     {
-      "id":"Diapers > size 5",
+      "id":"Baby: Diapers > size 5",
       "parent": "Baby",
       "en":"Diapers > size 5",
       "uk":"Diapers > size 5"
     },
     {
-      "id":"Diapers > size 6",
+      "id":"Baby: Diapers > size 6",
       "parent": "Baby",
       "en":"Diapers > size 6",
       "uk":"Diapers > size 6"
     },
     {
-      "id":"Diapers > size 7",
+      "id":"Baby: Diapers > size 7",
       "parent": "Baby",
       "en":"Diapers > size 7",
       "uk":"Diapers > size 7"
     },
     {
-      "id":"Diapers > size 8",
+      "id":"Baby: Diapers > size 8",
       "parent": "Baby",
       "en":"Diapers > size 8",
       "uk":"Diapers > size 8"
     },
     {
-      "id":"Formula > 1",
+      "id":"Baby: Formula > 1",
       "parent": "Baby",
       "en":"Formula > 1",
       "uk":"Formula > 1"
     },
     {
-      "id":"Formula > 2",
+      "id":"Baby: Formula > 2",
       "parent": "Baby",
       "en":"Formula > 2",
       "uk":"Formula > 2"
     },
     {
-      "id":"Formula > 3",
+      "id":"Baby: Formula > 3",
       "parent": "Baby",
       "en":"Formula > 3",
       "uk":"Formula > 3"
     },
     {
-      "id":"Formula > 4",
+      "id":"Baby: Formula > 4",
       "parent": "Baby",
       "en":"Formula > 4",
       "uk":"Formula > 4"
     },
     {
-      "id":"Formula > 5",
+      "id":"Baby: Formula > 5",
       "parent": "Baby",
       "en":"Formula > 5",
       "uk":"Formula > 5"
     },
     {
-      "id":"Formula > 6",
+      "id":"Baby: Formula > 6",
       "parent": "Baby",
       "en":"Formula > 6",
       "uk":"Formula > 6"
     },
     {
-      "id":"Porridge",
+      "id":"Baby: Porridge",
       "parent": "Baby",
       "en":"Porridge",
       "uk":"Porridge"
     },
     {
-      "id":"Pouches",
+      "id":"Baby: Pouches",
       "parent": "Baby",
       "en":"Pouches",
       "uk":"Pouches"
     },
     {
-      "id":"Ready meals",
+      "id":"Baby: Ready meals",
       "parent": "Baby",
       "en":"Ready meals",
       "uk":"Ready meals"
     },
     {
-      "id":"Shampoo",
+      "id":"Baby: Shampoo",
       "parent": "Baby",
       "en":"Shampoo",
       "uk":"Shampoo"
     },
     {
-      "id":"Toothbrush",
+      "id":"Baby: Toothbrush",
       "parent": "Baby",
       "en":"Toothbrush",
       "uk":"Toothbrush"
     },
     {
-      "id":"Toothpaste",
+      "id":"Baby: Toothpaste",
       "parent": "Baby",
       "en":"Toothpaste",
       "uk":"Toothpaste"
     },
     {
-      "id":"1L bottle",
+      "id":"Beverages: 1L bottle",
       "parent": "Beverages",
       "en":"1L bottle",
       "uk":"1L bottle"
     },
     {
-      "id":"Can",
+      "id":"Beverages: Can",
       "parent": "Beverages",
       "en":"Can",
       "uk":"Can"
     },
     {
-      "id":"Juice 1L",
+      "id":"Beverages: Juice 1L",
       "parent": "Beverages",
       "en":"Juice 1L",
       "uk":"Juice 1L"
     },
     {
-      "id":"Kids Juice (small boxes)",
+      "id":"Beverages: Kids Juice (small boxes)",
       "parent": "Beverages",
       "en":"Kids Juice (small boxes)",
       "uk":"Kids Juice (small boxes)"
     },
     {
-      "id":"Spartkly Water 1,5L",
+      "id":"Beverages: Spartkly Water 1,5L",
       "parent": "Beverages",
       "en":"Spartkly Water 1,5L",
       "uk":"Spartkly Water 1,5L"
     },
     {
-      "id":"Tea",
+      "id":"Beverages: Tea",
       "parent": "Beverages",
       "en":"Tea",
       "uk":"Tea"
     },
     {
-      "id":"Water 1,5L",
+      "id":"Beverages: Water 1,5L",
       "parent": "Beverages",
       "en":"Water 1,5L",
       "uk":"Water 1,5L"
     },
     {
-      "id":"Water 5L",
+      "id":"Beverages: Water 5L",
       "parent": "Beverages",
       "en":"Water 5L",
       "uk":"Water 5L"
     },
     {
-      "id":"Bread",
+      "id":"Breakfast: Bread",
       "parent": "Breakfast",
       "en":"Bread",
       "uk":"Bread"
     },
     {
-      "id":"Cacao",
+      "id":"Breakfast: Cacao",
       "parent": "Breakfast",
       "en":"Cacao",
       "uk":"Cacao"
     },
     {
-      "id":"Cake Mix",
+      "id":"Breakfast: Cake Mix",
       "parent": "Breakfast",
       "en":"Cake Mix",
       "uk":"Cake Mix"
     },
     {
-      "id":"Cereal",
+      "id":"Breakfast: Cereal",
       "parent": "Breakfast",
       "en":"Cereal",
       "uk":"Cereal"
     },
     {
-      "id":"Cereal Bar",
+      "id":"Breakfast: Cereal Bar",
       "parent": "Breakfast",
       "en":"Cereal Bar",
       "uk":"Cereal Bar"
     },
     {
-      "id":"Chocolate Spread (eg. Nutella)",
+      "id":"Breakfast: Chocolate Spread (eg. Nutella)",
       "parent": "Breakfast",
       "en":"Chocolate Spread (eg. Nutella)",
       "uk":"Chocolate Spread (eg. Nutella)"
     },
     {
-      "id":"Coffee",
+      "id":"Breakfast: Coffee",
       "parent": "Breakfast",
       "en":"Coffee",
       "uk":"Coffee"
     },
     {
-      "id":"Cookies",
+      "id":"Breakfast: Cookies",
       "parent": "Breakfast",
       "en":"Cookies",
       "uk":"Cookies"
     },
     {
-      "id":"Granola",
+      "id":"Breakfast: Granola",
       "parent": "Breakfast",
       "en":"Granola",
       "uk":"Granola"
     },
     {
-      "id":"Jam",
+      "id":"Breakfast: Jam",
       "parent": "Breakfast",
       "en":"Jam",
       "uk":"Jam"
     },
     {
-      "id":"Marmelade",
+      "id":"Breakfast: Marmelade",
       "parent": "Breakfast",
       "en":"Marmelade",
       "uk":"Marmelade"
     },
     {
-      "id":"Milk",
+      "id":"Breakfast: Milk",
       "parent": "Breakfast",
       "en":"Milk",
       "uk":"Milk"
     },
     {
-      "id":"Musli",
+      "id":"Breakfast: Musli",
       "parent": "Breakfast",
       "en":"Musli",
       "uk":"Musli"
     },
     {
-      "id":"Oats",
+      "id":"Breakfast: Oats",
       "parent": "Breakfast",
       "en":"Oats",
       "uk":"Oats"
     },
     {
-      "id":"Pate",
+      "id":"Breakfast: Pate",
       "parent": "Breakfast",
       "en":"Pate",
       "uk":"Pate"
     },
     {
-      "id":"Peanut Butter",
+      "id":"Breakfast: Peanut Butter",
       "parent": "Breakfast",
       "en":"Peanut Butter",
       "uk":"Peanut Butter"
     },
     {
-      "id":"Porridge",
+      "id":"Breakfast: Porridge",
       "parent": "Breakfast",
       "en":"Porridge",
       "uk":"Porridge"
     },
     {
-      "id":"Protein Bar",
+      "id":"Breakfast: Protein Bar",
       "parent": "Breakfast",
       "en":"Protein Bar",
       "uk":"Protein Bar"
     },
     {
-      "id":"Pudding Mix",
+      "id":"Breakfast: Pudding Mix",
       "parent": "Breakfast",
       "en":"Pudding Mix",
       "uk":"Pudding Mix"
     },
     {
-      "id":"Meals >Others",
+      "id":"Canned Food: Meals >Others",
       "parent": "Canned Food",
       "en":"Meals >Others",
       "uk":"Meals >Others"
     },
     {
-      "id":"Meals >Soups",
+      "id":"Canned Food: Meals >Soups",
       "parent": "Canned Food",
       "en":"Meals >Soups",
       "uk":"Meals >Soups"
     },
     {
-      "id":"Meat >Others",
+      "id":"Canned Food: Meat >Others",
       "parent": "Canned Food",
       "en":"Meat >Others",
       "uk":"Meat >Others"
     },
     {
-      "id":"Meat >Pate spreads",
+      "id":"Canned Food: Meat >Pate spreads",
       "parent": "Canned Food",
       "en":"Meat >Pate spreads",
       "uk":"Meat >Pate spreads"
     },
     {
-      "id":"Meat >Sardine",
+      "id":"Canned Food: Meat >Sardine",
       "parent": "Canned Food",
       "en":"Meat >Sardine",
       "uk":"Meat >Sardine"
     },
     {
-      "id":"Meat >Tuna",
+      "id":"Canned Food: Meat >Tuna",
       "parent": "Canned Food",
       "en":"Meat >Tuna",
       "uk":"Meat >Tuna"
     },
     {
-      "id":"Vegetables >Appel sauce",
+      "id":"Canned Food: Vegetables >Appel sauce",
       "parent": "Canned Food",
       "en":"Vegetables >Appel sauce",
       "uk":"Vegetables >Appel sauce"
     },
     {
-      "id":"Vegetables >Beans",
+      "id":"Canned Food: Vegetables >Beans",
       "parent": "Canned Food",
       "en":"Vegetables >Beans",
       "uk":"Vegetables >Beans"
     },
     {
-      "id":"Vegetables >Beets",
+      "id":"Canned Food: Vegetables >Beets",
       "parent": "Canned Food",
       "en":"Vegetables >Beets",
       "uk":"Vegetables >Beets"
     },
     {
-      "id":"Vegetables >Carrot",
+      "id":"Canned Food: Vegetables >Carrot",
       "parent": "Canned Food",
       "en":"Vegetables >Carrot",
       "uk":"Vegetables >Carrot"
     },
     {
-      "id":"Vegetables >Chickpeas",
+      "id":"Canned Food: Vegetables >Chickpeas",
       "parent": "Canned Food",
       "en":"Vegetables >Chickpeas",
       "uk":"Vegetables >Chickpeas"
     },
     {
-      "id":"Vegetables >Corn",
+      "id":"Canned Food: Vegetables >Corn",
       "parent": "Canned Food",
       "en":"Vegetables >Corn",
       "uk":"Vegetables >Corn"
     },
     {
-      "id":"Vegetables >Fruits",
+      "id":"Canned Food: Vegetables >Fruits",
       "parent": "Canned Food",
       "en":"Vegetables >Fruits",
       "uk":"Vegetables >Fruits"
     },
     {
-      "id":"Vegetables >Mushroom",
+      "id":"Canned Food: Vegetables >Mushroom",
       "parent": "Canned Food",
       "en":"Vegetables >Mushroom",
       "uk":"Vegetables >Mushroom"
     },
     {
-      "id":"Vegetables >Olives",
+      "id":"Canned Food: Vegetables >Olives",
       "parent": "Canned Food",
       "en":"Vegetables >Olives",
       "uk":"Vegetables >Olives"
     },
     {
-      "id":"Vegetables >Paprika",
+      "id":"Canned Food: Vegetables >Paprika",
       "parent": "Canned Food",
       "en":"Vegetables >Paprika",
       "uk":"Vegetables >Paprika"
     },
     {
-      "id":"Vegetables >Pea",
+      "id":"Canned Food: Vegetables >Pea",
       "parent": "Canned Food",
       "en":"Vegetables >Pea",
       "uk":"Vegetables >Pea"
     },
     {
-      "id":"Vegetables >Pesto",
+      "id":"Canned Food: Vegetables >Pesto",
       "parent": "Canned Food",
       "en":"Vegetables >Pesto",
       "uk":"Vegetables >Pesto"
     },
     {
-      "id":"Vegetables >Pickles",
+      "id":"Canned Food: Vegetables >Pickles",
       "parent": "Canned Food",
       "en":"Vegetables >Pickles",
       "uk":"Vegetables >Pickles"
     },
     {
-      "id":"Vegetables >Sauces",
+      "id":"Canned Food: Vegetables >Sauces",
       "parent": "Canned Food",
       "en":"Vegetables >Sauces",
       "uk":"Vegetables >Sauces"
     },
     {
-      "id":"Vegetables >Sauerkraut",
+      "id":"Canned Food: Vegetables >Sauerkraut",
       "parent": "Canned Food",
       "en":"Vegetables >Sauerkraut",
       "uk":"Vegetables >Sauerkraut"
     },
     {
-      "id":"Vegetables >Tomato",
+      "id":"Canned Food: Vegetables >Tomato",
       "parent": "Canned Food",
       "en":"Vegetables >Tomato",
       "uk":"Vegetables >Tomato"
     },
     {
-      "id":"Vegetables >Veggie Mix",
+      "id":"Canned Food: Vegetables >Veggie Mix",
       "parent": "Canned Food",
       "en":"Vegetables >Veggie Mix",
       "uk":"Vegetables >Veggie Mix"
     },
     {
-      "id":"All purpose cleaner",
+      "id":"Household: All purpose cleaner",
       "parent": "Household",
       "en":"All purpose cleaner",
       "uk":"All purpose cleaner"
     },
     {
-      "id":"Batteries > size 9V",
+      "id":"Household: Batteries > size 9V",
       "parent": "Household",
       "en":"Batteries > size 9V",
       "uk":"Batteries > size 9V"
     },
     {
-      "id":"Batteries > size AA",
+      "id":"Household: Batteries > size AA",
       "parent": "Household",
       "en":"Batteries > size AA",
       "uk":"Batteries > size AA"
     },
     {
-      "id":"Batteries > size AAA",
+      "id":"Household: Batteries > size AAA",
       "parent": "Household",
       "en":"Batteries > size AAA",
       "uk":"Batteries > size AAA"
     },
     {
-      "id":"Batteries > size AAAA",
+      "id":"Household: Batteries > size AAAA",
       "parent": "Household",
       "en":"Batteries > size AAAA",
       "uk":"Batteries > size AAAA"
     },
     {
-      "id":"Batteries > size C",
+      "id":"Household: Batteries > size C",
       "parent": "Household",
       "en":"Batteries > size C",
       "uk":"Batteries > size C"
     },
     {
-      "id":"Batteries > size D",
+      "id":"Household: Batteries > size D",
       "parent": "Household",
       "en":"Batteries > size D",
       "uk":"Batteries > size D"
     },
     {
-      "id":"Dish Soap",
+      "id":"Household: Dish Soap",
       "parent": "Household",
       "en":"Dish Soap",
       "uk":"Dish Soap"
     },
     {
-      "id":"Disposable Utensils > Cups",
+      "id":"Household: Disposable Utensils > Cups",
       "parent": "Household",
       "en":"Disposable Utensils > Cups",
       "uk":"Disposable Utensils > Cups"
     },
     {
-      "id":"Disposable Utensils > Forks",
+      "id":"Household: Disposable Utensils > Forks",
       "parent": "Household",
       "en":"Disposable Utensils > Forks",
       "uk":"Disposable Utensils > Forks"
     },
     {
-      "id":"Disposable Utensils > Knives",
+      "id":"Household: Disposable Utensils > Knives",
       "parent": "Household",
       "en":"Disposable Utensils > Knives",
       "uk":"Disposable Utensils > Knives"
     },
     {
-      "id":"Disposable Utensils > Napkins",
+      "id":"Household: Disposable Utensils > Napkins",
       "parent": "Household",
       "en":"Disposable Utensils > Napkins",
       "uk":"Disposable Utensils > Napkins"
     },
     {
-      "id":"Disposable Utensils > Plates",
+      "id":"Household: Disposable Utensils > Plates",
       "parent": "Household",
       "en":"Disposable Utensils > Plates",
       "uk":"Disposable Utensils > Plates"
     },
     {
-      "id":"Fabric softener",
+      "id":"Household: Fabric softener",
       "parent": "Household",
       "en":"Fabric softener",
       "uk":"Fabric softener"
     },
     {
-      "id":"Laundry detergent powder",
+      "id":"Household: Laundry detergent powder",
       "parent": "Household",
       "en":"Laundry detergent powder",
       "uk":"Laundry detergent powder"
     },
     {
-      "id":"Paper Towel",
+      "id":"Household: Paper Towel",
       "parent": "Household",
       "en":"Paper Towel",
       "uk":"Paper Towel"
     },
     {
-      "id":"Shampoo",
+      "id":"Household: Shampoo",
       "parent": "Household",
       "en":"Shampoo",
       "uk":"Shampoo"
     },
     {
-      "id":"Sponge",
+      "id":"Household: Sponge",
       "parent": "Household",
       "en":"Sponge",
       "uk":"Sponge"
     },
     {
-      "id":"Toilet Paper",
+      "id":"Household: Toilet Paper",
       "parent": "Household",
       "en":"Toilet Paper",
       "uk":"Toilet Paper"
     },
     {
-      "id":"Toothbrush",
+      "id":"Household: Toothbrush",
       "parent": "Household",
       "en":"Toothbrush",
       "uk":"Toothbrush"
     },
     {
-      "id":"Toothpaste",
+      "id":"Household: Toothpaste",
       "parent": "Household",
       "en":"Toothpaste",
       "uk":"Toothpaste"
     },
     {
-      "id":"Trashbags > 35 L",
+      "id":"Household: Trashbags > 35 L",
       "parent": "Household",
       "en":"Trashbags > 35 L",
       "uk":"Trashbags > 35 L"
     },
     {
-      "id":"Trashbags > 60 L",
+      "id":"Household: Trashbags > 60 L",
       "parent": "Household",
       "en":"Trashbags > 60 L",
       "uk":"Trashbags > 60 L"
     },
     {
-      "id":"Trashbags > 90 L",
+      "id":"Household: Trashbags > 90 L",
       "parent": "Household",
       "en":"Trashbags > 90 L",
       "uk":"Trashbags > 90 L"
     },
     {
-      "id":"Vanish",
+      "id":"Household: Vanish",
       "parent": "Household",
       "en":"Vanish",
       "uk":"Vanish"
     },
     {
-      "id":"Baking Powder",
+      "id":"Others: Baking Powder",
       "parent": "Others",
       "en":"Baking Powder",
       "uk":"Baking Powder"
     },
     {
-      "id":"Baking Soda",
+      "id":"Others: Baking Soda",
       "parent": "Others",
       "en":"Baking Soda",
       "uk":"Baking Soda"
     },
     {
-      "id":"Flour",
+      "id":"Others: Flour",
       "parent": "Others",
       "en":"Flour",
       "uk":"Flour"
     },
     {
-      "id":"Ketchup",
+      "id":"Others: Ketchup",
       "parent": "Others",
       "en":"Ketchup",
       "uk":"Ketchup"
     },
     {
-      "id":"Lemon Juice",
+      "id":"Others: Lemon Juice",
       "parent": "Others",
       "en":"Lemon Juice",
       "uk":"Lemon Juice"
     },
     {
-      "id":"Mayonese",
+      "id":"Others: Mayonese",
       "parent": "Others",
       "en":"Mayonese",
       "uk":"Mayonese"
     },
     {
-      "id":"Mustard",
+      "id":"Others: Mustard",
       "parent": "Others",
       "en":"Mustard",
       "uk":"Mustard"
     },
     {
-      "id":"Oil",
+      "id":"Others: Oil",
       "parent": "Others",
       "en":"Oil",
       "uk":"Oil"
     },
     {
-      "id":"Salt",
+      "id":"Others: Salt",
       "parent": "Others",
       "en":"Salt",
       "uk":"Salt"
     },
     {
-      "id":"Spices",
+      "id":"Others: Spices",
       "parent": "Others",
       "en":"Spices",
       "uk":"Spices"
     },
     {
-      "id":"Sugar",
+      "id":"Others: Sugar",
       "parent": "Others",
       "en":"Sugar",
       "uk":"Sugar"
     },
     {
-      "id":"Vinegar",
+      "id":"Others: Vinegar",
       "parent": "Others",
       "en":"Vinegar",
       "uk":"Vinegar"
     },
     {
-      "id":"Couscous",
+      "id":"Pasta Rice Grains: Couscous",
       "parent": "Pasta Rice Grains",
       "en":"Couscous",
       "uk":"Couscous"
     },
     {
-      "id":"Lasagna",
+      "id":"Pasta Rice Grains: Lasagna",
       "parent": "Pasta Rice Grains",
       "en":"Lasagna",
       "uk":"Lasagna"
     },
     {
-      "id":"Lentil",
+      "id":"Pasta Rice Grains: Lentil",
       "parent": "Pasta Rice Grains",
       "en":"Lentil",
       "uk":"Lentil"
     },
     {
-      "id":"Pasta",
+      "id":"Pasta Rice Grains: Pasta",
       "parent": "Pasta Rice Grains",
       "en":"Pasta",
       "uk":"Pasta"
     },
     {
-      "id":"Puree",
+      "id":"Pasta Rice Grains: Puree",
       "parent": "Pasta Rice Grains",
       "en":"Puree",
       "uk":"Puree"
     },
     {
-      "id":"Ready Meals (risotto, ready rice etc)",
+      "id":"Pasta Rice Grains: Ready Meals (risotto, ready rice etc)",
       "parent": "Pasta Rice Grains",
       "en":"Ready Meals (risotto, ready rice etc)",
       "uk":"Ready Meals (risotto, ready rice etc)"
     },
     {
-      "id":"Rice",
+      "id":"Pasta Rice Grains: Rice",
       "parent": "Pasta Rice Grains",
       "en":"Rice",
       "uk":"Rice"
     },
     {
-      "id":"Sauce",
+      "id":"Pasta Rice Grains: Sauce",
       "parent": "Pasta Rice Grains",
       "en":"Sauce",
       "uk":"Sauce"
     },
     {
-      "id":"Bird Food",
+      "id":"Pets: Bird Food",
       "parent": "Pets",
       "en":"Bird Food",
       "uk":"Bird Food"
     },
     {
-      "id":"Cat food",
+      "id":"Pets: Cat food",
       "parent": "Pets",
       "en":"Cat food",
       "uk":"Cat food"
     },
     {
-      "id":"Dog food",
+      "id":"Pets: Dog food",
       "parent": "Pets",
       "en":"Dog food",
       "uk":"Dog food"
     },
     {
-      "id":"Hamster food",
+      "id":"Pets: Hamster food",
       "parent": "Pets",
       "en":"Hamster food",
       "uk":"Hamster food"
     },
     {
-      "id":"Others",
+      "id":"Pets: Others",
       "parent": "Pets",
       "en":"Others",
       "uk":"Others"
     },
     {
-      "id":"Biscuits",
+      "id":"Snacks: Biscuits",
       "parent": "Snacks",
       "en":"Biscuits",
       "uk":"Biscuits"
     },
     {
-      "id":"Chocolate",
+      "id":"Snacks: Chocolate",
       "parent": "Snacks",
       "en":"Chocolate",
       "uk":"Chocolate"
     },
     {
-      "id":"Cookies",
+      "id":"Snacks: Cookies",
       "parent": "Snacks",
       "en":"Cookies",
       "uk":"Cookies"
     },
     {
-      "id":"Dried Fruits",
+      "id":"Snacks: Dried Fruits",
       "parent": "Snacks",
       "en":"Dried Fruits",
       "uk":"Dried Fruits"
     },
     {
-      "id":"Fruit Gum",
+      "id":"Snacks: Fruit Gum",
       "parent": "Snacks",
       "en":"Fruit Gum",
       "uk":"Fruit Gum"
     },
     {
-      "id":"Gummy Bears",
+      "id":"Snacks: Gummy Bears",
       "parent": "Snacks",
       "en":"Gummy Bears",
       "uk":"Gummy Bears"
     },
     {
-      "id":"Nuts",
+      "id":"Snacks: Nuts",
       "parent": "Snacks",
       "en":"Nuts",
       "uk":"Nuts"
     },
     {
-      "id":"Pastries",
+      "id":"Snacks: Pastries",
       "parent": "Snacks",
       "en":"Pastries",
       "uk":"Pastries"
     },
     {
-      "id":"Peanuts",
+      "id":"Snacks: Peanuts",
       "parent": "Snacks",
       "en":"Peanuts",
       "uk":"Peanuts"
     },
     {
-      "id":"Popcorn",
+      "id":"Snacks: Popcorn",
       "parent": "Snacks",
       "en":"Popcorn",
       "uk":"Popcorn"
     },
     {
-      "id":"Protein Bar",
+      "id":"Snacks: Protein Bar",
       "parent": "Snacks",
       "en":"Protein Bar",
       "uk":"Protein Bar"
     },
     {
-      "id":"Waffles",
+      "id":"Snacks: Waffles",
       "parent": "Snacks",
       "en":"Waffles",
       "uk":"Waffles"
     }
   ]
-}
