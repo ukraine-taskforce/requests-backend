@@ -390,7 +390,7 @@
       "id":"Canned Food: Meat > Sardine",
       "parent": "Canned Food",
       "en": "Meat > Sardine",
-      "uk": "М'ясо > сардин"
+      "uk": "М'ясо > сардини"
     },
     {
       "id":"Canned Food: Meat > Tuna",
@@ -402,103 +402,103 @@
       "id":"Canned Food: Vegetables > Apple sauce",
       "parent": "Canned Food",
       "en": "Vegetables > Apple sauce",
-      "uk": "Овочі> яблучний соус"
+      "uk": "Овочі > яблучний соус"
     },
     {
       "id":"Canned Food: Vegetables > Beans",
       "parent": "Canned Food",
       "en": "Vegetables > Beans",
-      "uk": "Овочі> квасоля"
+      "uk": "Овочі > квасоля"
     },
     {
       "id":"Canned Food: Vegetables > Beets",
       "parent": "Canned Food",
       "en": "Vegetables > Beets",
-      "uk": "Овочі> буряк"
+      "uk": "Овочі > буряк"
     },
     {
       "id":"Canned Food: Vegetables > Carrot",
       "parent": "Canned Food",
       "en": "Vegetables > Carrot",
-      "uk": "Овочі> морква"
+      "uk": "Овочі > морква"
     },
     {
       "id":"Canned Food: Vegetables > Chickpeas",
       "parent": "Canned Food",
       "en": "Vegetables > Chickpeas",
-      "uk": "Овочі> нут"
+      "uk": "Овочі > нут"
     },
     {
       "id":"Canned Food: Vegetables > Corn",
       "parent": "Canned Food",
       "en": "Vegetables > Corn",
-      "uk": "Овочі> кукурудза"
+      "uk": "Овочі > кукурудза"
     },
     {
       "id":"Canned Food: Vegetables > Fruits",
       "parent": "Canned Food",
       "en": "Vegetables > Fruits",
-      "uk": "Овочі> фрукти"
+      "uk": "Овочі > фрукти"
     },
     {
       "id":"Canned Food: Vegetables > Mushrooms",
       "parent": "Canned Food",
       "en": "Vegetables > Mushrooms",
-      "uk": "Овочі> гриби"
+      "uk": "Овочі > гриби"
     },
     {
       "id":"Canned Food: Vegetables > Olives",
       "parent": "Canned Food",
       "en": "Vegetables > Olives",
-      "uk": "Овочі> оливки"
+      "uk": "Овочі > оливки"
     },
     {
       "id":"Canned Food: Vegetables > Paprika",
       "parent": "Canned Food",
       "en": "Vegetables > Paprika",
-      "uk": "Овочі> паприка"
+      "uk": "Овочі > паприка"
     },
     {
       "id":"Canned Food: Vegetables > Pea",
       "parent": "Canned Food",
       "en": "Vegetables > Pea",
-      "uk": "Овочі> горох"
+      "uk": "Овочі > горох"
     },
     {
       "id":"Canned Food: Vegetables > Pesto",
       "parent": "Canned Food",
       "en": "Vegetables > Pesto",
-      "uk": "Овочі> песто"
+      "uk": "Овочі > песто"
     },
     {
       "id":"Canned Food: Vegetables > Pickles",
       "parent": "Canned Food",
       "en": "Vegetables > Pickles",
-      "uk": "Овочі> соління"
+      "uk": "Овочі > соління"
     },
     {
       "id":"Canned Food: Vegetables > Sauces",
       "parent": "Canned Food",
       "en": "Vegetables > Sauces",
-      "uk": "Овочі> соуси"
+      "uk": "Овочі > соуси"
     },
     {
       "id":"Canned Food: Vegetables > Sauerkraut",
       "parent": "Canned Food",
       "en": "Vegetables > Sauerkraut",
-      "uk": "Овочі> квашена капуста"
+      "uk": "Овочі > квашена капуста"
     },
     {
       "id":"Canned Food: Vegetables > Tomatoes",
       "parent": "Canned Food",
       "en": "Vegetables > Tomatoes",
-      "uk": "Овочі> помідори"
+      "uk": "Овочі > помідори"
     },
     {
       "id":"Canned Food: Vegetables > Veggie Mix",
       "parent": "Canned Food",
       "en": "Vegetables > Veggie Mix",
-      "uk": "Овочі> овочева суміш"
+      "uk": "Овочі > овочева суміш"
     },
     {
       "id":"Household: All purpose cleaner",
@@ -871,6 +871,6 @@
       "parent": "Snacks",
       "en": "Waffles",
       "uk": "Вафлі"
-    } 
+    }
   ]
 }
