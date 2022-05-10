@@ -1,39 +1,39 @@
 {
   "categories": {
     "Baby": {
-      "uk": "Baby",
+      "uk": "Дитячі продукти",
       "en": "Baby"
     },
     "Beverages": {
-      "uk": "Beverages",
+      "uk": "Напої",
       "en": "Beverages"
     },
     "Breakfast": {
-      "uk": "Breakfast",
+      "uk": "Сніданок",
       "en": "Breakfast"
     },
     "Canned Food": {
-      "uk": "Canned Food",
+      "uk": "Консерви",
       "en": "Canned Food"
     },
     "Household": {
-      "uk": "Household",
+      "uk": "Побутові товари",
       "en": "Household"
     },
     "Others": {
-      "uk": "Others",
+      "uk": "Інші",
       "en": "Others"
     },
     "Pasta Rice Grains": {
-      "uk": "Pasta Rice Grains",
+      "uk": "Макарони Рис Зернові",
       "en": "Pasta Rice Grains"
     },
     "Pets": {
-      "uk": "Pets",
+      "uk": "Домашні тварини",
       "en": "Pets"
     },
     "Snacks": {
-      "uk": "Snacks",
+      "uk": "Закуски",
       "en": "Snacks"
     }
   },
