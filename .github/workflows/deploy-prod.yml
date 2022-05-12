@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        lambda: [locations, processor, requests, supplies, requests-aggregated]
+        lambda: [locations, processor, requests, supplies, requests-aggregated, requests-list]
     name: Deploy Lambda
     runs-on: ubuntu-latest
     steps:
@@ -26,6 +26,7 @@ jobs:
           elif [ "${{ matrix.lambda }}" == requests ]; then LAMBDA_NAME=PostRequest
           elif [ "${{ matrix.lambda }}" == supplies ]; then LAMBDA_NAME=GetSupplies
           elif [ "${{ matrix.lambda }}" == requests-aggregated ]; then LAMBDA_NAME=GetRequestsAggregated
+          elif [ "${{ matrix.lambda }}" == requests-list ]; then LAMBDA_NAME=ListRequests
           else exit 1
           fi
           echo "LAMBDA_NAME=${LAMBDA_NAME}" >> $GITHUB_ENV

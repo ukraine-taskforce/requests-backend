@@ -21,6 +21,9 @@ module.exports.handler = async (event) => {
     let version;
     if (event.pathParameters) version = event.pathParameters.version;
 
+    let id;
+    if (event.pathParameters) id = event.pathParameters.id;
+
     let request
     if (version === "v2") {
         request = {
@@ -30,6 +33,7 @@ module.exports.handler = async (event) => {
             comments: body.comments,
             name: body.name,
             phoneNumber: body.phoneNumber,
+            requestId: id,
         };
     } else if (version === "v1") {
         request = {
