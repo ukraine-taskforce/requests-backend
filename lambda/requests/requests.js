@@ -33,6 +33,7 @@ module.exports.handler = async (event) => {
             comments: body.comments,
             name: body.name,
             phoneNumber: body.phoneNumber,
+            status: body.status,
             requestId: id,
         };
     } else if (version === "v1") {
