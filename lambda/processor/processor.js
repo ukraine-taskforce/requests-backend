@@ -36,15 +36,33 @@ async function processV1Request(body) {
 }
 
 async function processV2Request(body) {
-    const params = {
-        Item: {
-            'id': uuid.v4(),
-            'timestamp': Date.now(),
-            'body': body
-        },
-        TableName: process.env.v2_table_name
-    };
-    return await storeToDynamoDB(params);
+    if (body.requestId) {
+        let requestId = body.requestId;
+        delete body.requestId;
+
+        await dynamoDbDocumentClient
+            .update({
+                TableName: process.env.v2_table_name,
+                Key: {
+                    id: requestId,
+                },
+                UpdateExpression: `set body = :body`,
+                ExpressionAttributeValues: {
+                    ":body": body,
+                },
+            })
+            .promise();
+    } else {
+        const params = {
+            Item: {
+                'id': uuid.v4(),
+                'timestamp': Date.now(),
+                'body': body
+            },
+            TableName: process.env.v2_table_name
+        };
+        return await storeToDynamoDB(params);
+    }
 }
 
 module.exports.handler = async (event) => {
