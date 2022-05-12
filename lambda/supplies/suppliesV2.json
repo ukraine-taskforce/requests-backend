@@ -1,132 +1,876 @@
 {
   "categories": {
-    "cat1": {
-      "uk": "Cat1 UKR",
-      "en": "Cat1"
+    "Baby": {
+      "uk": "Дитячі продукти",
+      "en": "Baby"
     },
-    "cat2": {
-      "uk": "Cat2 UKR",
-      "en": "Cat2"
+    "Beverages": {
+      "uk": "Напої",
+      "en": "Beverages"
     },
-    "cat3": {
-      "uk": "Cat3 UKR",
-      "en": "Cat3"
+    "Breakfast": {
+      "uk": "Сніданок",
+      "en": "Breakfast"
+    },
+    "Canned Food": {
+      "uk": "Консерви",
+      "en": "Canned Food"
+    },
+    "Household": {
+      "uk": "Побутові товари",
+      "en": "Household"
+    },
+    "Others": {
+      "uk": "Інші",
+      "en": "Others"
+    },
+    "Pasta Rice Grains": {
+      "uk": "Макарони Рис Зернові",
+      "en": "Pasta Rice Grains"
+    },
+    "Pets": {
+      "uk": "Домашні тварини",
+      "en": "Pets"
+    },
+    "Snacks": {
+      "uk": "Закуски",
+      "en": "Snacks"
     }
   },
   "subcategories": [
     {
-      "id": "food",
-      "parent": "cat1",
-      "uk": "Продукти харчування",
-      "en": "Food"
+      "id":"Baby: Baby food > salty",
+      "parent": "Baby",
+      "en": "Baby food > salty",
+      "uk": "Дитяче харчування > солоне"
     },
     {
-      "id": "water",
-      "parent": "cat1",
-      "uk": "Вода",
-      "en": "Water"
+      "id":"Baby: Baby food > sweet",
+      "parent": "Baby",
+      "en": "Baby food > sweet",
+      "uk": "Дитяче харчування> солодке"
     },
     {
-      "id": "baby_food",
-      "parent": "cat1",
-      "uk": "Дитяче харчування",
-      "en": "Baby Food"
+      "id":"Baby: Baby oil",
+      "parent": "Baby",
+      "en": "Baby oil",
+      "uk": "Дитяча олійка"
     },
     {
-      "id": "baby_products",
-      "parent": "cat2",
-      "uk": "Дитячі товари",
-      "en": "Baby Products"
+      "id":"Baby: Bottle",
+      "parent": "Baby",
+      "en": "Bottle",
+      "uk": "Пляшка"
     },
     {
-      "id": "medical_kits_supplies",
-      "parent": "cat2",
-      "uk": "Медичні товари",
-      "en": "Medical Kits / Supplies"
+      "id":"Baby: Cleaning Wipes",
+      "parent": "Baby",
+      "en": "Cleaning Wipes",
+      "uk": "Очищаючі серветки"
     },
     {
-      "id": "personal_hygiene_kits",
-      "parent": "cat2",
-      "uk": "Товари особистої гігієни",
-      "en": "Personal hygiene kits"
+      "id":"Baby: Cookies",
+      "parent": "Baby",
+      "en": "Cookies",
+      "uk": "Печиво"
     },
     {
-      "id": "masks",
-      "parent": "cat2",
-      "uk": "Маски",
-      "en": "Masks"
+      "id":"Baby: Cream",
+      "parent": "Baby",
+      "en": "Cream",
+      "uk": "Крем"
     },
     {
-      "id": "sanitary_pads",
-      "parent": "cat3",
-      "uk": "Гігієнічні прокладки",
-      "en": "Sanitary pads"
+      "id":"Baby: Diapers > size 1",
+      "parent": "Baby",
+      "en": "Diapers > size 1",
+      "uk": "Памперси > розмір 1"
     },
     {
-      "id": "tampons",
-      "parent": "cat3",
-      "uk": "Тампони",
-      "en": "Tampons"
+      "id":"Baby: Diapers > size 2",
+      "parent": "Baby",
+      "en": "Diapers > size 2",
+      "uk": "Памперси > розмір 2"
     },
     {
-      "id": "torches",
-      "parent": "cat3",
-      "uk": "Смолоскипи",
-      "en": "Torches"
+      "id":"Baby: Diapers > size 3",
+      "parent": "Baby",
+      "en": "Diapers > size 3",
+      "uk": "Памперси > розмір 3"
     },
     {
-      "id": "batteries",
-      "parent": "cat3",
-      "uk": "Батарейки",
-      "en": "Batteries"
+      "id":"Baby: Diapers > size 4",
+      "parent": "Baby",
+      "en": "Diapers > size 4",
+      "uk": "Памперси > розмір 4"
     },
     {
-      "id": "candles",
-      "parent": "cat3",
-      "uk": "Свічки",
-      "en": "Candles"
+      "id":"Baby: Diapers > size 5",
+      "parent": "Baby",
+      "en": "Diapers > size 5",
+      "uk": "Памперси > розмір 5"
     },
     {
-      "id": "firestarter",
-      "parent": "cat3",
-      "uk": "Запальнички",
-      "en": "Firestarter"
+      "id":"Baby: Diapers > size 6",
+      "parent": "Baby",
+      "en": "Diapers > size 6",
+      "uk": "Памперси > розмір 6"
     },
     {
-      "id": "bedding",
-      "parent": "cat3",
-      "uk": "Постільна білизна",
-      "en": "Bedding"
+      "id":"Baby: Diapers > size 7",
+      "parent": "Baby",
+      "en": "Diapers > size 7",
+      "uk": "Памперси > розмір 7"
     },
     {
-      "id": "sleeping_bags",
-      "parent": "cat3",
-      "uk": "Спальні мішки",
-      "en": "Sleeping Bags"
+      "id":"Baby: Diapers > size 8",
+      "parent": "Baby",
+      "en": "Diapers > size 8",
+      "uk": "Памперси > розмір 8"
     },
     {
-      "id": "thermal_clothing",
-      "parent": "cat3",
-      "uk": "Термоодяг",
-      "en": "Thermal clothing"
+      "id":"Baby: Formula > 1",
+      "parent": "Baby",
+      "en": "Formula > 1",
+      "uk": "Формула > 1"
     },
     {
-      "id": "shoes",
-      "parent": "cat3",
-      "uk": "Взуття",
-      "en": "Shoes"
+      "id":"Baby: Formula > 2",
+      "parent": "Baby",
+      "en": "Formula > 2",
+      "uk": "Формула > 2"
     },
     {
-      "id": "clothes",
-      "parent": "cat3",
-      "uk": "Одяг",
-      "en": "Clothes"
+      "id":"Baby: Formula > 3",
+      "parent": "Baby",
+      "en": "Formula > 3",
+      "uk": "Формула > 3"
     },
     {
-      "id": "gloves",
-      "parent": "cat3",
-      "uk": "Рукавички",
-      "en": "Gloves"
+      "id":"Baby: Formula > 4",
+      "parent": "Baby",
+      "en": "Formula > 4",
+      "uk": "Формула > 4"
+    },
+    {
+      "id":"Baby: Formula > 5",
+      "parent": "Baby",
+      "en": "Formula > 5",
+      "uk": "Формула > 5"
+    },
+    {
+      "id":"Baby: Formula > 6",
+      "parent": "Baby",
+      "en": "Formula > 6",
+      "uk": "Формула > 6"
+    },
+    {
+      "id":"Baby: Porridge",
+      "parent": "Baby",
+      "en": "Porridge",
+      "uk": "Каша"
+    },
+    {
+      "id":"Baby: Pouches",
+      "parent": "Baby",
+      "en": "Pouches",
+      "uk": "Пауч"
+    },
+    {
+      "id":"Baby: Ready meals",
+      "parent": "Baby",
+      "en": "Ready meals",
+      "uk": "Готові страви"
+    },
+    {
+      "id":"Baby: Shampoo",
+      "parent": "Baby",
+      "en": "Shampoo",
+      "uk": "Шампунь"
+    },
+    {
+      "id":"Baby: Toothbrush",
+      "parent": "Baby",
+      "en": "Toothbrush",
+      "uk": "Зубна щітка"
+    },
+    {
+      "id":"Baby: Toothpaste",
+      "parent": "Baby",
+      "en": "Toothpaste",
+      "uk": "Зубна паста"
+    },
+    {
+      "id":"Beverages: 1L bottle",
+      "parent": "Beverages",
+      "en": "1L bottle",
+      "uk": "Пляшка 1 л"
+    },
+    {
+      "id":"Beverages: Can",
+      "parent": "Beverages",
+      "en": "Can",
+      "uk": "Банка"
+    },
+    {
+      "id":"Beverages: Juice 1L",
+      "parent": "Beverages",
+      "en": "Juice 1L",
+      "uk": "Сік 1 л"
+    },
+    {
+      "id":"Beverages: Kids Juice (small boxes)",
+      "parent": "Beverages",
+      "en": "Kids Juice (small boxes)",
+      "uk": "Дитячий сік (невеликі коробки)"
+    },
+    {
+      "id":"Beverages: Sparkly Water 1,5L",
+      "parent": "Beverages",
+      "en": "Sparkly Water 1,5L",
+      "uk": "Вода з газом 1,5 л"
+    },
+    {
+      "id":"Beverages: Tea",
+      "parent": "Beverages",
+      "en": "Tea",
+      "uk": "Чай"
+    },
+    {
+      "id":"Beverages: Water 1,5L",
+      "parent": "Beverages",
+      "en": "Water 1,5L",
+      "uk": "Вода 1,5 л"
+    },
+    {
+      "id":"Beverages: Water 5L",
+      "parent": "Beverages",
+      "en": "Water 5L",
+      "uk": "Вода 5 л"
+    },
+    {
+      "id":"Breakfast: Bread",
+      "parent": "Breakfast",
+      "en": "Bread",
+      "uk": "Хліб"
+    },
+    {
+      "id":"Breakfast: Cacao",
+      "parent": "Breakfast",
+      "en": "Cacao",
+      "uk": "Какао"
+    },
+    {
+      "id":"Breakfast: Cake Mix",
+      "parent": "Breakfast",
+      "en": "Cake Mix",
+      "uk": "Суміш для торту"
+    },
+    {
+      "id":"Breakfast: Cereal",
+      "parent": "Breakfast",
+      "en": "Cereal",
+      "uk": "Пластівці"
+    },
+    {
+      "id":"Breakfast: Cereal Bar",
+      "parent": "Breakfast",
+      "en": "Cereal Bar",
+      "uk": "Злакові батончики"
+    },
+    {
+      "id":"Breakfast: Chocolate Spread (eg. Nutella)",
+      "parent": "Breakfast",
+      "en": "Chocolate Spread (eg. Nutella)",
+      "uk": "Шоколадна паста (наприклад нутелла)"
+    },
+    {
+      "id":"Breakfast: Coffee",
+      "parent": "Breakfast",
+      "en": "Coffee",
+      "uk": "Кава"
+    },
+    {
+      "id":"Breakfast: Cookies",
+      "parent": "Breakfast",
+      "en": "Cookies",
+      "uk": "Печиво"
+    },
+    {
+      "id":"Breakfast: Granola",
+      "parent": "Breakfast",
+      "en": "Granola",
+      "uk": "Гранола"
+    },
+    {
+      "id":"Breakfast: Jam",
+      "parent": "Breakfast",
+      "en": "Jam",
+      "uk": "Варення"
+    },
+    {
+      "id":"Breakfast: Marmelade",
+      "parent": "Breakfast",
+      "en": "Marmelade",
+      "uk": "Мармелад"
+    },
+    {
+      "id":"Breakfast: Milk",
+      "parent": "Breakfast",
+      "en": "Milk",
+      "uk": "Молоко"
+    },
+    {
+      "id":"Breakfast: Musli",
+      "parent": "Breakfast",
+      "en": "Musli",
+      "uk": "Муслі"
+    },
+    {
+      "id":"Breakfast: Oats",
+      "parent": "Breakfast",
+      "en": "Oats",
+      "uk": "Овес"
+    },
+    {
+      "id":"Breakfast: Pate",
+      "parent": "Breakfast",
+      "en": "Pate",
+      "uk": "Паштет"
+    },
+    {
+      "id":"Breakfast: Peanut Butter",
+      "parent": "Breakfast",
+      "en": "Peanut Butter",
+      "uk": "Арахісове масло"
+    },
+    {
+      "id":"Breakfast: Porridge",
+      "parent": "Breakfast",
+      "en": "Porridge",
+      "uk": "Каша"
+    },
+    {
+      "id":"Breakfast: Protein Bar",
+      "parent": "Breakfast",
+      "en": "Protein Bar",
+      "uk": "Протеїновий батончик"
+    },
+    {
+      "id":"Breakfast: Pudding Mix",
+      "parent": "Breakfast",
+      "en": "Pudding Mix",
+      "uk": "Суміш для пудингу"
+    },
+    {
+      "id":"Canned Food: Meals > Others",
+      "parent": "Canned Food",
+      "en": "Meals > Others",
+      "uk": "Їжа > інші"
+    },
+    {
+      "id":"Canned Food: Meals > Soups",
+      "parent": "Canned Food",
+      "en": "Meals > Soups",
+      "uk": "Їжа > супи"
+    },
+    {
+      "id":"Canned Food: Meat > Others",
+      "parent": "Canned Food",
+      "en": "Meat > Others",
+      "uk": "М'ясо > інші"
+    },
+    {
+      "id":"Canned Food: Meat > Pate spreads",
+      "parent": "Canned Food",
+      "en": "Meat > Pate spreads",
+      "uk": "М'ясо > паштет"
+    },
+    {
+      "id":"Canned Food: Meat > Sardine",
+      "parent": "Canned Food",
+      "en": "Meat > Sardine",
+      "uk": "М'ясо > сардини"
+    },
+    {
+      "id":"Canned Food: Meat > Tuna",
+      "parent": "Canned Food",
+      "en": "Meat > Tuna",
+      "uk": "М'ясо > тунець"
+    },
+    {
+      "id":"Canned Food: Vegetables > Apple sauce",
+      "parent": "Canned Food",
+      "en": "Vegetables > Apple sauce",
+      "uk": "Овочі > яблучний соус"
+    },
+    {
+      "id":"Canned Food: Vegetables > Beans",
+      "parent": "Canned Food",
+      "en": "Vegetables > Beans",
+      "uk": "Овочі > квасоля"
+    },
+    {
+      "id":"Canned Food: Vegetables > Beets",
+      "parent": "Canned Food",
+      "en": "Vegetables > Beets",
+      "uk": "Овочі > буряк"
+    },
+    {
+      "id":"Canned Food: Vegetables > Carrot",
+      "parent": "Canned Food",
+      "en": "Vegetables > Carrot",
+      "uk": "Овочі > морква"
+    },
+    {
+      "id":"Canned Food: Vegetables > Chickpeas",
+      "parent": "Canned Food",
+      "en": "Vegetables > Chickpeas",
+      "uk": "Овочі > нут"
+    },
+    {
+      "id":"Canned Food: Vegetables > Corn",
+      "parent": "Canned Food",
+      "en": "Vegetables > Corn",
+      "uk": "Овочі > кукурудза"
+    },
+    {
+      "id":"Canned Food: Vegetables > Fruits",
+      "parent": "Canned Food",
+      "en": "Vegetables > Fruits",
+      "uk": "Овочі > фрукти"
+    },
+    {
+      "id":"Canned Food: Vegetables > Mushrooms",
+      "parent": "Canned Food",
+      "en": "Vegetables > Mushrooms",
+      "uk": "Овочі > гриби"
+    },
+    {
+      "id":"Canned Food: Vegetables > Olives",
+      "parent": "Canned Food",
+      "en": "Vegetables > Olives",
+      "uk": "Овочі > оливки"
+    },
+    {
+      "id":"Canned Food: Vegetables > Paprika",
+      "parent": "Canned Food",
+      "en": "Vegetables > Paprika",
+      "uk": "Овочі > паприка"
+    },
+    {
+      "id":"Canned Food: Vegetables > Pea",
+      "parent": "Canned Food",
+      "en": "Vegetables > Pea",
+      "uk": "Овочі > горох"
+    },
+    {
+      "id":"Canned Food: Vegetables > Pesto",
+      "parent": "Canned Food",
+      "en": "Vegetables > Pesto",
+      "uk": "Овочі > песто"
+    },
+    {
+      "id":"Canned Food: Vegetables > Pickles",
+      "parent": "Canned Food",
+      "en": "Vegetables > Pickles",
+      "uk": "Овочі > соління"
+    },
+    {
+      "id":"Canned Food: Vegetables > Sauces",
+      "parent": "Canned Food",
+      "en": "Vegetables > Sauces",
+      "uk": "Овочі > соуси"
+    },
+    {
+      "id":"Canned Food: Vegetables > Sauerkraut",
+      "parent": "Canned Food",
+      "en": "Vegetables > Sauerkraut",
+      "uk": "Овочі > квашена капуста"
+    },
+    {
+      "id":"Canned Food: Vegetables > Tomatoes",
+      "parent": "Canned Food",
+      "en": "Vegetables > Tomatoes",
+      "uk": "Овочі > помідори"
+    },
+    {
+      "id":"Canned Food: Vegetables > Veggie Mix",
+      "parent": "Canned Food",
+      "en": "Vegetables > Veggie Mix",
+      "uk": "Овочі > овочева суміш"
+    },
+    {
+      "id":"Household: All purpose cleaner",
+      "parent": "Household",
+      "en": "All purpose cleaner",
+      "uk": "Універсальні засоби для чищення"
+    },
+    {
+      "id":"Household: Batteries > size 9V",
+      "parent": "Household",
+      "en": "Batteries > size 9V",
+      "uk": "Батарейки > розмір 9V"
+    },
+    {
+      "id":"Household: Batteries > size AA",
+      "parent": "Household",
+      "en": "Batteries > size AA",
+      "uk": "Батарейки > розмір AA"
+    },
+    {
+      "id":"Household: Batteries > size AAA",
+      "parent": "Household",
+      "en": "Batteries > size AAA",
+      "uk": "Батарейки > розмір AAA"
+    },
+    {
+      "id":"Household: Batteries > size AAAA",
+      "parent": "Household",
+      "en": "Batteries > size AAAA",
+      "uk": "Батарейки > розмір AAAA"
+    },
+    {
+      "id":"Household: Batteries > size C",
+      "parent": "Household",
+      "en": "Batteries > size C",
+      "uk": "Батарейки > розмір C"
+    },
+    {
+      "id":"Household: Batteries > size D",
+      "parent": "Household",
+      "en": "Batteries > size D",
+      "uk": "Батарейки > розмір D"
+    },
+    {
+      "id":"Household: Dish Soap",
+      "parent": "Household",
+      "en": "Dish Soap",
+      "uk": "Засіб для миття посуду"
+    },
+    {
+      "id":"Household: Disposable Utensils > Cups",
+      "parent": "Household",
+      "en": "Disposable Utensils > Cups",
+      "uk": "Одноразовий посуд > чашки"
+    },
+    {
+      "id":"Household: Disposable Utensils > Forks",
+      "parent": "Household",
+      "en": "Disposable Utensils > Forks",
+      "uk": "Одноразовий посуд > виделки"
+    },
+    {
+      "id":"Household: Disposable Utensils > Knives",
+      "parent": "Household",
+      "en": "Disposable Utensils > Knives",
+      "uk": "Одноразовий посуд > ножі"
+    },
+    {
+      "id":"Household: Disposable Utensils > Napkins",
+      "parent": "Household",
+      "en": "Disposable Utensils > Napkins",
+      "uk": "Одноразовий посуд> серветки"
+    },
+    {
+      "id":"Household: Disposable Utensils > Plates",
+      "parent": "Household",
+      "en": "Disposable Utensils > Plates",
+      "uk": "Одноразовий посуд> тарілки"
+    },
+    {
+      "id":"Household: Fabric softener",
+      "parent": "Household",
+      "en": "Fabric softener",
+      "uk": "Кондиціонер для білизни"
+    },
+    {
+      "id":"Household: Laundry detergent powder",
+      "parent": "Household",
+      "en": "Laundry detergent powder",
+      "uk": "Пральний порошок"
+    },
+    {
+      "id":"Household: Paper Towel",
+      "parent": "Household",
+      "en": "Paper Towel",
+      "uk": "Паперовий рушник"
+    },
+    {
+      "id":"Household: Shampoo",
+      "parent": "Household",
+      "en": "Shampoo",
+      "uk": "Шампунь"
+    },
+    {
+      "id":"Household: Sponge",
+      "parent": "Household",
+      "en": "Sponge",
+      "uk": "Губка"
+    },
+    {
+      "id":"Household: Toilet Paper",
+      "parent": "Household",
+      "en": "Toilet Paper",
+      "uk": "Туалетний папір"
+    },
+    {
+      "id":"Household: Toothbrush",
+      "parent": "Household",
+      "en": "Toothbrush",
+      "uk": "Зубна щітка"
+    },
+    {
+      "id":"Household: Toothpaste",
+      "parent": "Household",
+      "en": "Toothpaste",
+      "uk": "Зубна паста"
+    },
+    {
+      "id":"Household: Trashbags > 35 L",
+      "parent": "Household",
+      "en": "Trashbags > 35 L",
+      "uk": "Мішки для сміття > 35 л"
+    },
+    {
+      "id":"Household: Trashbags > 60 L",
+      "parent": "Household",
+      "en": "Trashbags > 60 L",
+      "uk": "Мішки для сміття > 60 л"
+    },
+    {
+      "id":"Household: Trashbags > 90 L",
+      "parent": "Household",
+      "en": "Trashbags > 90 L",
+      "uk": "Мішки для сміття > 90 л"
+    },
+    {
+      "id":"Household: Vanish",
+      "parent": "Household",
+      "en": "Vanish",
+      "uk": "Vanish"
+    },
+    {
+      "id":"Others: Baking Powder",
+      "parent": "Others",
+      "en": "Baking Powder",
+      "uk": "Порошок для випічки"
+    },
+    {
+      "id":"Others: Baking Soda",
+      "parent": "Others",
+      "en": "Baking Soda",
+      "uk": "Харчова сода"
+    },
+    {
+      "id":"Others: Flour",
+      "parent": "Others",
+      "en": "Flour",
+      "uk": "Борошно"
+    },
+    {
+      "id":"Others: Ketchup",
+      "parent": "Others",
+      "en": "Ketchup",
+      "uk": "Кетчуп"
+    },
+    {
+      "id":"Others: Lemon Juice",
+      "parent": "Others",
+      "en": "Lemon Juice",
+      "uk": "Лимонний сік"
+    },
+    {
+      "id":"Others: Mayonese",
+      "parent": "Others",
+      "en": "Mayonese",
+      "uk": "Майонез"
+    },
+    {
+      "id":"Others: Mustard",
+      "parent": "Others",
+      "en": "Mustard",
+      "uk": "Гірчиця"
+    },
+    {
+      "id":"Others: Oil",
+      "parent": "Others",
+      "en": "Oil",
+      "uk": "Олія"
+    },
+    {
+      "id":"Others: Salt",
+      "parent": "Others",
+      "en": "Salt",
+      "uk": "Сіль"
+    },
+    {
+      "id":"Others: Spices",
+      "parent": "Others",
+      "en": "Spices",
+      "uk": "Спеції"
+    },
+    {
+      "id":"Others: Sugar",
+      "parent": "Others",
+      "en": "Sugar",
+      "uk": "Цукор"
+    },
+    {
+      "id":"Others: Vinegar",
+      "parent": "Others",
+      "en": "Vinegar",
+      "uk": "Оцет"
+    },
+    {
+      "id":"Pasta Rice Grains: Couscous",
+      "parent": "Pasta Rice Grains",
+      "en": "Couscous",
+      "uk": "Кускус"
+    },
+    {
+      "id":"Pasta Rice Grains: Lasagna",
+      "parent": "Pasta Rice Grains",
+      "en": "Lasagna",
+      "uk": "Лазанья"
+    },
+    {
+      "id":"Pasta Rice Grains: Lentil",
+      "parent": "Pasta Rice Grains",
+      "en": "Lentil",
+      "uk": "Сочевиця"
+    },
+    {
+      "id":"Pasta Rice Grains: Pasta",
+      "parent": "Pasta Rice Grains",
+      "en": "Pasta",
+      "uk": "Макарони"
+    },
+    {
+      "id":"Pasta Rice Grains: Puree",
+      "parent": "Pasta Rice Grains",
+      "en": "Puree",
+      "uk": "Пюре"
+    },
+    {
+      "id":"Pasta Rice Grains: Ready Meals (risotto, ready rice etc)",
+      "parent": "Pasta Rice Grains",
+      "en": "Ready Meals (risotto, ready rice etc)",
+      "uk": "Готові страви (різотто, готовий рис тощо)"
+    },
+    {
+      "id":"Pasta Rice Grains: Rice",
+      "parent": "Pasta Rice Grains",
+      "en": "Rice",
+      "uk": "Рис"
+    },
+    {
+      "id":"Pasta Rice Grains: Sauce",
+      "parent": "Pasta Rice Grains",
+      "en": "Sauce",
+      "uk": "Соус"
+    },
+    {
+      "id":"Pets: Bird Food",
+      "parent": "Pets",
+      "en": "Bird Food",
+      "uk": "Їжа для пташок"
+    },
+    {
+      "id":"Pets: Cat food",
+      "parent": "Pets",
+      "en": "Cat food",
+      "uk": "Їжа для котів"
+    },
+    {
+      "id":"Pets: Dog food",
+      "parent": "Pets",
+      "en": "Dog food",
+      "uk": "Їжа для собак"
+    },
+    {
+      "id":"Pets: Hamster food",
+      "parent": "Pets",
+      "en": "Hamster food",
+      "uk": "Їжа для хом'ячків"
+    },
+    {
+      "id":"Pets: Others",
+      "parent": "Pets",
+      "en": "Others",
+      "uk": "Інше"
+    },
+    {
+      "id":"Snacks: Biscuits",
+      "parent": "Snacks",
+      "en": "Biscuits",
+      "uk": "Білквіти"
+    },
+    {
+      "id":"Snacks: Chocolate",
+      "parent": "Snacks",
+      "en": "Chocolate",
+      "uk": "Шоколад"
+    },
+    {
+      "id":"Snacks: Cookies",
+      "parent": "Snacks",
+      "en": "Cookies",
+      "uk": "Печиво"
+    },
+    {
+      "id":"Snacks: Dried Fruits",
+      "parent": "Snacks",
+      "en": "Dried Fruits",
+      "uk": "Сушені фрукти"
+    },
+    {
+      "id":"Snacks: Fruit Gum",
+      "parent": "Snacks",
+      "en": "Fruit Gum",
+      "uk": "Фруктова жувальна гумка"
+    },
+    {
+      "id":"Snacks: Gummy Bears",
+      "parent": "Snacks",
+      "en": "Gummy Bears",
+      "uk": "Мармеладні ведмедики"
+    },
+    {
+      "id":"Snacks: Nuts",
+      "parent": "Snacks",
+      "en": "Nuts",
+      "uk": "Горіхи"
+    },
+    {
+      "id":"Snacks: Pastries",
+      "parent": "Snacks",
+      "en": "Pastries",
+      "uk": "Випічка"
+    },
+    {
+      "id":"Snacks: Peanuts",
+      "parent": "Snacks",
+      "en": "Peanuts",
+      "uk": "Арахіс"
+    },
+    {
+      "id":"Snacks: Popcorn",
+      "parent": "Snacks",
+      "en": "Popcorn",
+      "uk": "Попкорн"
+    },
+    {
+      "id":"Snacks: Protein Bar",
+      "parent": "Snacks",
+      "en": "Protein Bar",
+      "uk": "Протеїновий батончик"
+    },
+    {
+      "id":"Snacks: Waffles",
+      "parent": "Snacks",
+      "en": "Waffles",
+      "uk": "Вафлі"
     }
   ]
 }
