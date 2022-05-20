@@ -1,6 +1,13 @@
 let AWS = require('aws-sdk'),
     dynamoDbDocumentClient = new AWS.DynamoDB.DocumentClient();
+const { CognitoJwtVerifier } = require("aws-jwt-verify");
 
+// Verifier that expects valid access token:
+const verifier = CognitoJwtVerifier.create({
+  userPoolId: process.env.poolId,
+  tokenUse: "access",
+  clientId: process.env.clientId,
+}); 
 
 function response(statusCode) {
     return {
@@ -15,6 +22,15 @@ function response(statusCode) {
 
 module.exports.handler = async (event) => {
     console.log("Request: ", event);
+
+    try {
+      await verifier.verify(event.headers["authorization"]);
+    } catch (error) {
+      return {
+        statusCode: 401,
+        body: "Not Authorized",
+      };
+    }
 
     let version;
     if (event.pathParameters) version = event.pathParameters.version;
